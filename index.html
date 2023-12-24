@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>charity project</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Hope Givers</a>
+        <nav class="navigation">
+            <a href="#Home">home</a>
+            <a href="#causes">causes</a>
+            <a href="#donate">Donate Statistics</a>
+            <a href="#donation form">Donate now</a>
+            <a href="#about us">about us</a>
+        </nav>
+    </header>
+
+
+    <section class="main" id="Home" >
+        <div>
+            <h2>Raising Hope<br><span>To the Homeless & <br>Hopeless People</span></h2>
+            <a href="#donate" class="main-btn">Donate now</a>
+        </div>
+    </section>
+<!-- first cause -->
+    <section class="" id="causes">
+        <h2 class="title">Causes</h2>
+        <div class="content">
+            <div class="causes-card">
+                <div class="causes-image">
+                    <img src="images/21.jpg " />
+                </div>
+                <div class="causes-info">
+                    
+                    <strong class="causes-title">
+                        <span>Education</span>
+                        <a href="#" class="more-details">Donate now</a>
+                    </strong>
+                    <p class="causes-category">help us to provide good learning</p>
+                </div>
+            </div>
+              <!-- second cause -->
+              <div class="causes-card">
+                <div class="causes-image">
+                    <img src="images/98.jpg " />
+                </div>
+                <div class="causes-info">
+                   
+                    <strong class="causes-title">
+                        <span>Good Life</span>
+                        <a href="#" class="more-details">Donate now</a>
+                    </strong>
+                    <p class="causes-category">help us to provide good life</p>
+                </div>
+            </div>
+            <!-- third cause -->
+            <div class="causes-card">
+                <div class="causes-image">
+                    <img src="images/9.jpg " />
+                </div>
+                <div class="causes-info">
+                    <strong class="causes-title">
+                        <span>Food</span>
+                        <a href="#" class="more-details">Donate now</a>
+                    </strong>
+                    <p class="causes-category">help us provide clean water & food</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section id="donate">
+    <h2 class="chart-heading">Countries Donations</h2>
+    <div class="Countries-stats">
+      <div class="chart-container">
+        <canvas class="my-chart"></canvas>
+      </div>
+
+      <div class="details">
+        <ul></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</section>
+
+
+
+<!-- Donatation form -->
+
+<section class="form" id="donation form">
+        <h2 class="title">Donate now</h2>
+        <div class="content">
+            <form class="" action="index.php" method="POST">
+                <label for="firstname">Fisrt name</label>
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="secondname"> Second Name</label>
+                <input type="text" id="secondname" name="secondname"  >
+                <br><br>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address"  >
+                <label for="amount">Amount of donation</label>
+                <input type="text" name="amount" id="amount"  >
+                <br><br>
+                <label for="pay">payment method:</label>
+                <select id="pay" name="pay">
+                  <option value="visa">Visa</option>
+                  <option value="credit card">credit card</option>
+                  <option value="paybal">paybal</option>
+                </select>
+                <br><br>
+                <button onclick="popup2()" id="btntest"  name="btntest" type="submit">Donate</button>   
+            </form>
+                
+            <script>
+                function popup2(){swal({
+           icon: "success"
+            , text: "Your Donation is DONE"} 
+           ); };
+                
+    </script>
+        </div>
+</section>
+
+
+            <!-- about us -->
+    
+            <section class="About us" id="about us">
+                <h2 class="title">About us</h2>
+                <div class="content">
+                    <div class="info">
+                        <h2>Hope givers</h2>
+                        <p> hope givers is a charity established in 20s ,
+                             it  has a positive impact on individuals, communities <br>
+                              and society as a whole. By engaging in charitable acts
+                              it is the act of extending love and kindness to others unconditionally
+                            </p>
+                    </div>
+                    <div class="card">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Phone</h3>
+                                <p>+20122222222</p>
+                            </div>
+                        </div>
+            
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>donate@charity.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+           
+    
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title">Hope givers <span>raising hope</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
